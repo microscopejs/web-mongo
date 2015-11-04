@@ -33,7 +33,7 @@ class ArticleController extends Controller {
 	show(request, response){
 		Article.findById(request.params.id, function(err, article) {
             if (err){
-                response.send(err);
+                response.send(err.message);
 			}
             response.json(article);
         });

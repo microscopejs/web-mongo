@@ -1,9 +1,9 @@
-var path = require('path');
-var swig = require('swig');
-var serveStatic = require('serve-static')
-var favicon = require('serve-favicon');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+import path from 'path';
+import swig from 'swig';
+import serveStatic from 'serve-static';
+import favicon from'serve-favicon';
+import cookieParser from'cookie-parser';
+import bodyParser from'body-parser';
 
 /**
  * common middlewares
