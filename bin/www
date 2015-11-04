@@ -1,0 +1,9 @@
+require("babel/register");
+
+var Application =  require('../Application');
+var dbContext = require('../models/dbContext');
+
+var a = new Application();
+a.run(function(){
+	console.log('application running at port :' + this.port);
+});

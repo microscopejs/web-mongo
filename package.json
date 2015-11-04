@@ -1,0 +1,30 @@
+{
+  "name": "web-mongo",
+  "version": "1.0.0",
+  "description": "microscope-web mongoDB starter-kit",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microscopejs/web-mongo.git"
+  },
+  "author": "bhtz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/microscopejs/web-mongo/issues"
+  },
+  "homepage": "https://github.com/microscopejs/web-mongo#readme",
+  "dependencies": {
+    "babel": "^5.8.12",
+    "body-parser": "^1.14.1",
+    "cookie-parser": "^1.4.0",
+    "microscope-web": "^0.4.1",
+    "mongoose": "^4.2.4",
+    "serve-favicon": "^2.3.0",
+    "serve-static": "^1.10.0",
+    "swig": "^1.4.2"
+  }
+}
