@@ -46,6 +46,10 @@ Commands
 
 	npm start
 	
+#### run with [nodemon](http://nodemon.io/) :
+
+	npm run dev
+	
 ROADMAP
 =======
 
