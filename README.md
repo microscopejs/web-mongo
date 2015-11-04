@@ -1,7 +1,7 @@
-web-blank
+web-mongo
 =========
 
-microscope-web blank starter kit
+microscope-web mongo starter kit
 
 ![microscopejs](https://avatars0.githubusercontent.com/u/13710913?v=3&s=200)
 
@@ -49,4 +49,9 @@ Commands
 ROADMAP
 =======
 
-* Terminate Article REST API
+* Article REST API
+	* PUT
+	* DELETE
+	* VALIDATION
+	* LIMIT, OFFSET
+* About
