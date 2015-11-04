@@ -4,12 +4,10 @@ import {logIp, logUrl} from '../filters/commonFilters';
 
 class HomeController extends Controller {
 
-	// add some controllers filter
 	get filters(){
 		return [logIp];
 	}
-
-	// configure controller routing with callback array
+	
 	get routes(){
 		return {
 			'get /': [logUrl, 'index'],

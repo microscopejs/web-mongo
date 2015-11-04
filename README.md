@@ -45,3 +45,8 @@ Commands
 #### run application:
 
 	npm start
+	
+ROADMAP
+=======
+
+* Terminate Article REST API

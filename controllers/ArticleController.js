@@ -3,13 +3,12 @@ import {Controller} from 'microscope-web';
 import Article from '../models/Article';
 
 class ArticleController extends Controller {
-	
-	get baseUrl(){
-		return '/articles';
+
+	get baseUrl() {
+		return '/api/articles';
 	}
 
-	// configure controller routing with callback array
-	get routes(){
+	get routes() {
 		return {
 			'get /': 'index',
 			'get /:id': 'show',
@@ -19,10 +18,10 @@ class ArticleController extends Controller {
 
 	// articles list
 	// GET /articles
-	index(request, response){
+	index(request, response) {
 		Article.find((err, articles) => {
-			if (err){
-				response.send(err); 
+			if (err) {
+				response.send(err);
 			}
             response.json(articles);
 		});
@@ -30,9 +29,9 @@ class ArticleController extends Controller {
 	
 	// articles details
 	// GET /articles/:id
-	show(request, response){
-		Article.findById(request.params.id, function(err, article) {
-            if (err){
+	show(request, response) {
+		Article.findById(request.params.id, function (err, article) {
+            if (err) {
                 response.send(err.message);
 			}
             response.json(article);
@@ -45,7 +44,7 @@ class ArticleController extends Controller {
 		var article = new Article();
 		article.title = "other";
 		article.description = "again";
-		
+
 		article.save((err) => {
             if (err) {
 				response.send(err);
