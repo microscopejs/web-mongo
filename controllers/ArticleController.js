@@ -21,8 +21,8 @@ class ArticleController extends Controller {
 	// articles list
 	// GET /api/articles
 	index(request, response) {
-		var offset = request.query.offset || 0;
-		var limit = request.query.limit || 0;
+		var offset = request.query.offset || null;
+		var limit = request.query.limit || null;
 		Article.find().skip(offset).limit(limit).exec((err, articles) => {
 			if (err) {
 				response.send(err);
