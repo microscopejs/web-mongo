@@ -53,9 +53,4 @@ Commands
 ROADMAP
 =======
 
-* Article REST API
-	* PUT
-	* DELETE
-	* VALIDATION
-	* LIMIT, OFFSET
 * About

@@ -13,7 +13,7 @@ class ArticleController extends Controller {
 			'get /': 'index',
 			'get /:id': 'show',
 			'post /': 'create',
-			'put /': 'update',
+			'put /:id': 'update',
 			'delete /:id': 'remove'
 		}
 	}
@@ -60,7 +60,7 @@ class ArticleController extends Controller {
 	// article update
 	// PUT /api/articles
 	update(request, response) {
-		Article.findOneAndUpdate({ _id: request.body._id }, request.body, (err, article) => {
+		Article.findOneAndUpdate({ _id: request.params.id }, request.body, (err, article) => {
             if (err) {
 				response.send(err);
 			};
