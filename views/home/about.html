@@ -1,6 +1,38 @@
 {% extends '../layout.html' %}
 {% block body %}
 
-<h1>About</h1>
+<h2>Template engine</h2>
+<p>
+	This repository use <a href="http://paularmstrong.github.io/swig/">swig</a>, a simple, powerful, and extendable JavaScript Template Engine.
+</p>
+
+<h2>Database</h2>
+<p>
+	This repository use <a href="http://mongoosejs.com/">mongoose ODM</a>, an elegant mongodb object modeling for node.js
+</p>
+
+<h2>MongoRestController</h2>
+<p>
+	To enable rapid REST API prototyping you can use microscope <a href="https://github.com/microscopejs/MongoRestController">mongo-rest-controller</a> NPM package.
+</p>
+
+<pre><code>npm i mongo-rest-controller --save</code></pre>
+
+<pre>
+	<code>
+import MongoRestController from 'mongo-rest-controller';
+import Article from '../models/Article';
+
+export default class ArticleController extends MongoRestController {
+    get baseUrl(){
+        return '/api/articles'
+    }
+
+    get model(){
+        return Article;
+    }
+}
+	</code>
+</pre>
 
 {% endblock %}
