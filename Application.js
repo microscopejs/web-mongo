@@ -23,4 +23,5 @@ class Application extends HttpApplication {
 	}
 }
 
-export default Application;
+// babel-register fix !
+module.exports = Application;
